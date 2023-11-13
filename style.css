@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgColor: #100314;
+    --color: #fefbff;
+}
+
+body {
+    background: var(--bgColor);
+    color: var(--color);
+}
+
+.slider {
+    margin-top: 200px;
+}
+
+.sliderWrap {
+    width: 100%;
+    /* border: 10px solid #333; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sliderContainer {
+    border: 2px solid rgba(255, 224, 224, 0.2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    width: 100%;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    transition: .4s linear;
+    cursor: grab;
+    --num: 1;
+    border-radius: 10px;
+
+}
+
+.sliderContainer::-webkit-scrollbar {
+    width: 0;
+}
+
+.sliderItem {
+    flex: 0 0 auto;
+    width: calc(100% / var(--num));
+    height: 520px;
+    scroll-snap-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(rgb(1, 6, 62), rgb(0, 45, 0));
+}
+
+.sliderImg {
+    height: 100%;
+    align-self: start;
+    object-fit: cover;
+}
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sliderCount {
+    justify-self: center;
+    background: rgb(21, 0, 143);
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+}
