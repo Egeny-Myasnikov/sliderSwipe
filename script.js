@@ -26,8 +26,6 @@ slider.addEventListener('scroll', (e) => {
     sliderCountCurrent.textContent = currentSlide
 })
 const move = (direction) => {
-    const sliderScrollLeft = slider.scrollLeft
-    const itemScrollWidth = slider.scrollWidth - sliderItem[0].clientWidth
     if (direction === 'left') {
         if (slider.scrollLeft < sliderItem[0].clientWidth) {
             slider.scrollLeft = slider.scrollWidth
