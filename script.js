@@ -7,7 +7,7 @@ const sliderCountCurrent = sliderCount.querySelector('.current')
 const sliderCountTotal = sliderCount.querySelector('.total')
 const sliderImg = document.querySelectorAll('.sliderImg')
 
-const images = ['img/Nikason.png', 'img/Nikason2.png', 'img/Nikason3.png', 'img/Nikason4.png', 'img/Nikason5.png', 'img/PUBG.png', 'img/PUBG2.png', 'img/PUBG3.png', 'img/PUBG4.png', 'img/37_1.jpg', 'img/44_1.jpg', 'img/PUBG5.png', 'img/PUBG6.png', 'img/Simada.png', 'img/Simada2.png', 'img/Simada3.png', 'img/Simada4.png', 'img/Simada5.png', 'img/Simada6.png', 'img/Simada7.png']
+const images = ['img/Nikason.png', 'img/Nikason2.png', 'img/Nikason3.png', 'img/Nikason4.png', 'img/Nikason5.png', 'img/PUBG.png', 'img/PUBG2.png', 'img/PUBG3.png', 'img/PUBG4.png', 'img/37_1.jpg', 'img/23.jpg', 'img/PUBG5.png', 'img/PUBG6.png', 'img/Simada.png', 'img/Simada2.png', 'img/Simada3.png', 'img/Simada4.png', 'img/Simada5.png', 'img/Simada6.png', 'img/Simada7.png']
 
 sliderImg.forEach((el, i) => {
     el.src = images[i]
